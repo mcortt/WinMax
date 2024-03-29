@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Maximizer Options</title>
+    <style>
+        body {
+            background-color: #282c34;
+            color: #abb2bf;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.5);
+            margin-right: 10px;
+        }
+        label {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Window Maximizer Options</h1>
+    <label>
+        <input type="checkbox" id="maximizeOnStartup">
+        Maximize on Startup
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="maximizeNewWindows">
+        Maximize New Windows
+    </label>
+    <script defer src="options.js"></script>
+</body>
+</html>

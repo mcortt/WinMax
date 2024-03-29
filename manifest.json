@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Window Maximizer",
+    "description": "Maximizes windows on startup and when they are created",
+    "version": "1.0",
+    "author": "mcortt",
+    "icons": {
+        "48": "icon.svg",
+        "96": "icon.svg"
+    },
+    "action": {
+        "default_icon": {
+            "48": "icon.svg",
+            "96": "icon.svg"
+        },
+        "default_title": "Maximize Windows"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "scripts": ["background.js"]
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+      },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "Win@Max"
+        }
+    },
+    "permissions": ["storage", "windows"]
+}
