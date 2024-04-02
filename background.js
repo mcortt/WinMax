@@ -15,7 +15,7 @@ chrome.runtime.onStartup.addListener(() => {
 chrome.windows.onCreated.addListener((window) => {
     storage.sync.get(['maximizeNewWindows'], function(result) {
         if (result.maximizeNewWindows) {
-            if (window.state !== 'maximized') {
+            if (window.state !== 'maximized' && window.type !== 'popup') {
                 chrome.windows.update(window.id, { state: 'maximized' });
             }
         }

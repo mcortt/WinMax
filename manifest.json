@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "WinMax",
     "description": "Maximizes windows on startup and when they are created",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "author": "mcortt",
     "icons": {
         "48": "icon.svg",
